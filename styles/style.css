@@ -1,0 +1,111 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+
+:root {
+  font-family: "Figtree Regular", sans-serif;
+  font-size: 62.5%;
+  --desc-width: 1440px;
+  --mobile-width: 375px;
+  --paragraph: 1.6rem;
+  --black: #111;
+	--pure-white: #fff;
+	--yellow: #f4d04e;
+	--grey: #7f7f7f;
+  --main-ident: 24px;
+  --main-ident-sx: 12px;
+  --font-weight-extra-bold: 800;
+  --line-height: 150%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: var(--main-ident);
+  max-width: 38.4rem;
+  background-color: var(--pure-white);
+  padding: var(--main-ident);
+  border-radius: 20px;
+  border: 2px solid var(--black);
+  box-shadow: clamp(0.8rem, calc(1vw + 1rem), 1.6rem) clamp(0.8rem, calc(1vw + 1rem), 1.6rem) var(--black);
+}
+
+.card__image {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card__content {
+  padding-top: var(--main-ident);
+  font-size: 1.2rem;
+}
+
+.card__tag {
+  cursor: pointer;
+  font-weight: var(--font-weight-extra-bold);
+  padding: calc(var(--main-ident-sx) / 2) var(--main-ident-sx);
+  background-color: var(--yellow);
+  border-radius: 4px;
+  font-size: clamp(1.2rem, calc(1vw + 1rem), 1.4rem);
+  display: inline-block;
+}
+
+.card__date {
+  font-size: clamp(1.2rem, calc(1vw + 1rem), 1.4rem);
+  margin: var(--main-ident-sx) 0;
+}
+
+.card__title {
+  font-size: clamp(2rem, calc(1vw + 1rem), 2.4rem);
+  margin-bottom: var(--main-ident-sx);
+}
+
+.card__title a {
+  color: var(--black);
+  cursor: url('../assets/images/handcursor.png'), auto; 
+  transition: all 300ms ease-in-out 0s;
+}
+
+.card__title a:hover {
+  color: var(--yellow);
+}
+
+.card__title span {
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  color: var(--grey);
+  font-size: clamp(1.4rem, calc(1vw + 1rem), 1.6rem);
+  line-height: var(--line-height);
+  margin-bottom: var(--main-ident);
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  gap: var(--main-ident-sx);
+}
+
+.caption__image {
+  width: 32px;
+  height: 32px;
+}
+
+.caption__title a {
+  color: var(--black);
+  font-size: 1.4rem;
+}
