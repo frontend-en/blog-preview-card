@@ -124,7 +124,7 @@ button {
   color: var(--black);
   font-size: 1.4rem;
 }
-.attribution {
+/* .attribution {
   background-color: var(--grey);
   color: var(--pure-white);
   display: flex;
@@ -135,7 +135,7 @@ button {
 }
 .attribution a {
   color: var(--yellow);
-}
+} */
 
 @media (min-width: 375px) {
   .card {
